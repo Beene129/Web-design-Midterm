@@ -1,0 +1,100 @@
+html {
+    background-color: black;
+    color: white;
+  }
+  .myart {
+    color: red;
+  }
+  .border {
+    border-style: dotted;
+  }
+  .chang-font {
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+
+  .divide {
+    display: flex;
+    justify-content:center;
+    width: 85%;
+  }
+
+  .divide div {
+    width:35%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2375d8;
+  }
+  
+  body {
+  
+    font-family: "Lexend Exa", sans-serif;
+  }
+  
+  nav {
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    transform: translateX(-50%);
+    display: inline-block;
+    border: 2px solid #ebecf1;
+    border-radius: 30px;
+    animation: slide-in 1s ease-out;
+    background-color: #ebecf1;
+  
+  }
+  
+  ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    margin: 0;
+    padding: 0 30px;
+    list-style-type: none;
+  }
+  ul li:not(:last-child) {
+    margin-right: 40px;
+  }
+  ul li {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 10px;
+    transition: background 0.2s;
+    width: 80%;
+  }
+  ul li a {
+    color: #2375d8;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+
+  ul li:hover {
+    background: #ec4138;
+    border: 2px solid #f05749;
+    border-right: 2px solid #e02a21;
+    border-bottom: 2px solid #e02a21;
+  }
+  ul li:hover a {
+    color: #f9f8fd;
+  }
+
+  
+  @keyframes slide-in {
+    0% {
+      top: -50px;
+    }
+    40% {
+      top: 20px;
+    }
+    70% {
+      top: 10px;
+    }
+    100% {
+      top: 15px;
+    }
+  }
+  
