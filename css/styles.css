@@ -13,7 +13,6 @@ html {
 }
 
 body {
-
   font-family: "Lexend Exa", sans-serif;
 }
 
@@ -27,7 +26,6 @@ nav {
   border-radius: 30px;
   animation: slide-in 1s ease-out;
   background-color: #ebecf1;
-
 }
 
 ul {
@@ -106,4 +104,71 @@ ul li:hover ul li a {
   100% {
     top: 15px;
   }
+}
+.container {
+  display: grid;
+  grid-template-rows: 1fr 2fr; /* Top half takes 1 part, bottom half takes 2 parts */
+  grid-template-columns: 1fr;
+  height: 400px; /* Set an appropriate height for your container */
+}
+.item1 {
+  grid-area: header;
+  background-color: #f05749;
+}
+.item2 {
+  grid-area: menu;
+  background: #3498db;
+}
+.item3 {
+  grid-area: main;
+  background-color: chartreuse;
+}
+.item4 {
+  grid-area: right;
+  background-color: blueviolet;
+}
+.item5 {
+  grid-area: footer;
+}
+.container-top {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "menu menu menu"
+    "main main right";
+  gap: 10px;
+  background-color: #000000;
+  padding: 10px;
+
+
+}
+.row {
+  border: 1px solid #333;
+  padding: 20px;
+}
+.row:nth-child(3) {
+  grid-column: span 2;
+}
+
+.top-half {
+  display: grid;
+  grid-template-rows: 1fr 1fr; /* Create a 2-column grid for top half */
+  position: relative;
+  grid-gap: 10px; /* Adjust the gap as needed */
+}
+
+
+.overlap-div {
+  position: relative;
+  background-color: #3498db;
+  width: 70%;
+  height: 100px;
+  margin-top: -40px;
+  z-index: 2;
+}
+
+.bottom-half {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Example: 3 columns */
+  grid-gap: 10px; /* Adjust the gap as needed */
 }
