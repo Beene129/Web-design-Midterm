@@ -7,9 +7,22 @@ html {
 }
 .border {
   border-style: dotted;
+  padding-left: 5%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  padding-top: 5%;
 }
 .chang-font {
   font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.bg{
+  background-color: darkred;
+}
+
+
+.bg3{
+  background-color: rgb(123, 123, 0);
 }
 
 body {
@@ -50,6 +63,15 @@ ul li a {
   text-decoration: none;
   text-transform: uppercase;
   transition: color 0.2s;
+}
+.left {
+  float: left;
+  height: 30%;
+}
+
+.right {
+  float:right;
+  height: 30%;
 }
 ul li ul {
   visibility: hidden;
